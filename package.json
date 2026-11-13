@@ -1,0 +1,14 @@
+{
+  "name": "tenantflow",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "pnpm -r --if-present typecheck",
+    "build": "pnpm -r --if-present build"
+  },
+  "packageManager": "pnpm@12.18.0",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
