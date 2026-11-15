@@ -74,3 +74,31 @@ The project is currently maintained by a single developer.
 Every pull request receives a documented self-review.
 External reviews are welcome but are not represented
 as completed unless they actually occurred.
+
+## Local Development
+
+### Prerequisites
+
+- Node.js version as defined in `.nvmrc` (e.g. `nvm use`)
+- pnpm version as defined in the `packageManager` field of `package.json`
+  (e.g. `corepack enable`)
+
+### Setup
+
+```bash
+pnpm install --frozen-lockfile
+```
+
+### Quality Checks
+
+| Command             | Purpose                                    |
+| ------------------- | ------------------------------------------ |
+| `pnpm format`       | Format all files with Prettier             |
+| `pnpm format:check` | Verify formatting without changing files   |
+| `pnpm lint`         | Run ESLint; warnings are treated as errors |
+| `pnpm typecheck`    | Type-check all workspaces                  |
+| `pnpm build`        | Build all workspaces                       |
+
+Run all checks before opening a pull request. The CI workflow runs
+`format:check`, `lint`, `typecheck` and `build` on every pull request
+to `main` and on every push to `main`.

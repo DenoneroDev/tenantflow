@@ -21,11 +21,13 @@ Use pnpm Workspaces to manage applications and shared packages in a single monor
 ## Consequences
 
 ### Positive
+
 - Shared packages can be developed alongside consuming applications.
 - A single lockfile supports reproducible dependency installation.
 - Cross-package changes can be reviewed together.
 
 ### Negative
+
 - CI must account for multiple packages.
 - Package boundaries require discipline.
 - Repository tooling may become more complex as the project grows.
