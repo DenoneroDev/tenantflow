@@ -8,6 +8,9 @@
     "build": "pnpm -r --if-present build"
   },
   "packageManager": "pnpm@12.18.0",
+  "engines": {
+    "node": ">=24.13.1 <25"
+  },
   "devDependencies": {
     "typescript": "^7.0.2"
   }
